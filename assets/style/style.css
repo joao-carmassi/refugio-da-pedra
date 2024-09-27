@@ -14,7 +14,7 @@
   --font-cursivo: "Whisper", cursive;
   --font-outra: "Gowun Batang", serif;
 
-  ---altura-nav: 60px;
+  ---altura-nav: 70px;
 }
 
 * {
@@ -23,33 +23,38 @@
   line-height: normal;
 }
 
+body {
+  background-color: var(--cor1);
+}
+
 header {
   width: 100%;
   position: fixed;
   z-index: 99;
-  top: calc(var(---altura-nav) * -1);
-  transition-duration: 1s;
-}
-
-.mostra-header {
   top: 0;
-  transition-duration: 1s;
+  background-color: white;
 }
 
 nav {
-  width: 100%;
+  width: 97%;
   height: var(---altura-nav);
   display: flex;
-  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+  & img {
+    height: 80%;
+    cursor: pointer;
+  }
 
   & ul {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 50%;
-    margin: 0 auto;
-    gap: 40px;
+    width: fit-content;
+    gap: 80px;
   }
 
   & a {
@@ -59,48 +64,46 @@ nav {
     font-size: 18px;
     position: relative;
     letter-spacing: 1px;
-    color: white;
+    font-weight: 500;
   }
 
-  & li > a::after {
+  & li > .nav-paginas::after {
     content: "";
     display: block;
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: black;
+    background-color: var(--cor4);
     transition-duration: 0.5s;
     left: 50%;
     transform: translateX(-50%);
   }
 
-  & li > a:hover:after {
+  & li > .nav-paginas:hover:after {
     width: 100%;
-  }
-
-  & div {
-    height: 100%;
-    width: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
   }
 }
 
 .botao-reservar {
   background-color: var(--cor2);
-  padding: 10px 16px;
+  padding: 8px 14px;
   border-radius: 4px;
+  color: var(--cor4);
+  text-shadow: none;
+}
+
+.botao-reservar:active {
+  transform: translateY(-5px);
 }
 
 main {
   width: 100%;
-  min-height: 100svh;
 }
 
 .container-video {
+  margin-top: var(---altura-nav);
   width: 100%;
-  height: 100svh;
+  height: calc(100svh - var(---altura-nav));
   background-image: url("../imgs/chales/Pousada/Bergolado/refugio-117.jpg");
   background-size: cover;
   background-position: center;
@@ -108,9 +111,6 @@ main {
   display: grid;
   place-items: center;
   font-size: 80px;
-  color: var(--cor1);
-  font-family: var(--font-cursivo);
-  font-weight: 600;
   box-shadow: 0 0 200px rgb(0, 0, 0) inset;
   position: relative;
 
@@ -130,6 +130,8 @@ main {
     letter-spacing: 2px;
     width: 105%;
     text-align: center;
+    font-family: var(--font-cursivo);
+    font-weight: 600;
   }
 
   & img {
