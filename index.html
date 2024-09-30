@@ -18,6 +18,12 @@
       href="./assets/imgs/icons/refugio-ico.png"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper.js" defer></script>
     <title>Refugio Da pedrao SP</title>
   </head>
   <body>
@@ -46,44 +52,89 @@
         <div class="div-titulo">
           <h2>Sua Jornada de Tranquilidade!</h2>
         </div>
-        <div class="div-conteudo-texto">
-          <p>
-            Embarque em uma jornada de tranquilidade e conexão com a natureza no
-            coração de São Paulo. Nossa pousada é um refúgio encantador,
-            localizado entre as majestosas montanhas e as paisagens exuberantes
-            de São Bento do Sapucaí. Seja para uma escapada romântica, uma
-            aventura em família ou uma busca por serenidade, o Refúgio da Pedra
-            SP oferece o cenário perfeito para todos os momentos especiais da
-            sua vida.
-          </p>
-        </div>
-        <div class="div-conteudo-imagens">
-          <div>
-            <span>
-              <img
-                src="./assets/imgs/pousada/geral/refugio-91.jpg"
-                class="praDireita"
-              />
-            </span>
-            <span>
-              <img
-                src="./assets/imgs/pousada/geral/refugio-116.jpg"
-                class="praDireita"
-              />
-            </span>
-            <span>
-              <img
-                src="./assets/imgs/pousada/fogueira/refugio-138.jpg"
-                class="praEsquerda"
-              />
-            </span>
-            <span>
-              <img
-                src="./assets/imgs/pousada/bergolado/refugio-114.jpg"
-                class="praEsquerda"
-              />
-            </span>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div
+                style="
+                  background-image: url(./assets/imgs/pousada/geral/refugio-1.jpg);
+                "
+                class="slide-card"
+              >
+                <p>
+                  Nossa pousada é um refúgio encantador, localizado entre as
+                  majestosas montanhas e as paisagens exuberantes de São Bento
+                  do Sapucaí.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                style="
+                  background-image: url(./assets/imgs/pousada/bergolado/refugio-2.jpg);
+                "
+                class="slide-card"
+              >
+                <p>
+                  Seja para uma escapada romântica, uma aventura em família ou
+                  uma busca por serenidade, o Refúgio da Pedra SP oferece o
+                  cenário perfeito para todos os momentos especiais da sua vida.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                style="
+                  background-image: url(./assets/imgs/pousada/bergolado/refugio-6.jpg);
+                "
+                class="slide-card"
+              >
+                <p>
+                  Desfrute de uma experiência única, onde a calma da natureza se
+                  entrelaça com o conforto e a hospitalidade.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                style="
+                  background-image: url(./assets/imgs/pousada/fogueira/refugio-8.jpg);
+                "
+                class="slide-card"
+              >
+                <p>
+                  Nossas acomodações decoradas criam um ambiente acolhedor,
+                  enquanto os arredores convidam a explorar trilhas serenas ou
+                  escalar para vistas deslumbrantes. No Refúgio da Pedra SP,
+                  cada momento vira uma memória inesquecível.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                style="
+                  background-image: url(./assets/imgs/pousada/cafe/refugio-5.jpg);
+                "
+                class="slide-card"
+              >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti voluptatem quis cupiditate a, commodi autem
+                  distinctio doloribus itaque maiores eos, dolor aliquam.
+                  Voluptatum cum pariatur eveniet necessitatibus eos quae fugit.
+                </p>
+              </div>
+            </div>
           </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </section>
       <section class="container-cafe">
