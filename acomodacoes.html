@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="./assets/style/style.css" />
     <link rel="stylesheet" href="./assets/style/acomodacoes.css" />
+    <link rel="stylesheet" href="./assets/style/media.css" />
     <link
       rel="shortcut icon"
       href="./assets/imgs/icons/refugio-ico.png"
@@ -22,21 +23,49 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="top-navigation">
         <a href="http://127.0.0.1:3000/index.html">
           <img
             loading="lazy"
             src="./assets/imgs/icons/refugio-ico.png"
-            alt="#"
+            alt="Iconi do refugio da Pedra"
           />
         </a>
         <ul>
-          <li><a class="nav-paginas" href="./index.html">Home</a></li>
+          <li><a class="navPaginaSelecionado" href="#">Home</a></li>
           <li>
-            <a class="navPaginaSelecionado" href="#">Acomodações</a>
+            <a class="nav-paginas" href="./acomodacoes.html">Acomodações</a>
           </li>
           <li>
-            <a class="botao-reservar" id="btnReservar" href="#">Reservar</a>
+            <a class="botao-reservar" href="#">Reservar</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="mobile-bottom-navigation">
+        <ul>
+          <li>
+            <a href="./index.html">
+              <img
+                src="./assets/imgs/icons/homePage.svg"
+                alt="Iconi de home page"
+              />
+            </a>
+          </li>
+          <li class="pagina">
+            <a href="#">
+              <img
+                src="./assets/imgs/icons/chales.svg"
+                alt="Iconi botao chalés"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./assets/imgs/icons/reservar.svg"
+                alt="Iconi de reservar"
+              />
+            </a>
           </li>
         </ul>
       </nav>
@@ -44,16 +73,18 @@
     <main></main>
     <footer>
       <div>
-        <a href="https://www.instagram.com/refugiodapedrasp/" target="_blank"
-          ><span>Instagram:</span> @refugiodapedrasp</a
-        >
-        <p><span>Contato:</span> (12) 99614-8154</p>
+        <div class="div-elementos">
+          <a href="https://www.instagram.com/refugiodapedrasp/" target="_blank"
+            ><span>Instagram:</span> @refugiodapedrasp</a
+          >
+          <p><span>Contato:</span> (12) 99614-8154</p>
+        </div>
+        <p>
+          <span>Endereço:</span> Refúgio da Pedra SP, Comunidade São Pedro, Rua
+          das Araucárias, Bairro Paiol Grande, São Bento do Sapucaí - SP
+        </p>
+        <p>© 2024 Refúgio da Pedra SP. Todos os direitos reservados.</p>
       </div>
-      <p>
-        <span>Endereço:</span> Refúgio da Pedra SP, Comunidade São Pedro, Rua
-        das Araucárias, Bairro Paiol Grande, São Bento do Sapucaí - SP
-      </p>
-      © 2024 Refúgio da Pedra SP. Todos os direitos reservados.
     </footer>
   </body>
 </html>
