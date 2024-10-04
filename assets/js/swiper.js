@@ -13,11 +13,16 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
   speed: 600,
-  slidesPerView: 3,
-  //   autoplay: {
-  //     delay: 5000,
-  //   },
+  slidesPerView: 1,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
 
+    1024: {
+      slidesPerView: 3,
+    },
+  },
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",

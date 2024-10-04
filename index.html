@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="./assets/style/style.css" />
     <link rel="stylesheet" href="./assets/style/index.css" />
+    <link rel="stylesheet" href="./assets/style/media.css" />
     <link
       rel="shortcut icon"
       href="./assets/imgs/icons/refugio-ico.png"
@@ -24,16 +25,16 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/swiper.js" defer></script>
-    <title>Refugio Da pedrao SP</title>
+    <title>Refugio da Pedra SP</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="top-navigation">
         <a href="http://127.0.0.1:3000/index.html">
           <img
             loading="lazy"
             src="./assets/imgs/icons/refugio-ico.png"
-            alt="#"
+            alt="Iconi do refugio da Pedra"
           />
         </a>
         <ul>
@@ -42,7 +43,35 @@
             <a class="nav-paginas" href="./acomodacoes.html">Acomodações</a>
           </li>
           <li>
-            <a class="botao-reservar" id="btnReservar" href="#">Reservar</a>
+            <a class="botao-reservar" href="#">Reservar</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="mobile-bottom-navigation">
+        <ul>
+          <li class="pagina">
+            <a href="#">
+              <img
+                src="./assets/imgs/icons/homePage.svg"
+                alt="Iconi de home page"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="./acomodacoes.html">
+              <img
+                src="./assets/imgs/icons/chales.svg"
+                alt="Iconi botao chalés"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./assets/imgs/icons/reservar.svg"
+                alt="Iconi de reservar"
+              />
+            </a>
           </li>
         </ul>
       </nav>
@@ -71,14 +100,15 @@
             <div class="swiper-slide">
               <div
                 style="
-                  background-image: url(./assets/imgs/pousada/geral/refugio-1.jpg);
+                  background-image: url(./assets/imgs/pousada/geral/refugio-4.jpg);
                 "
                 class="slide-card"
+                card="car"
               >
                 <p>
-                  Nossa pousada é um refúgio encantador, localizado entre as
-                  majestosas montanhas e as paisagens exuberantes de São Bento
-                  do Sapucaí.
+                  Cada chalé possui seu próprio estacionamento individual,
+                  oferecendo segurança e praticidade durante toda a sua
+                  hospedagem.
                 </p>
               </div>
             </div>
@@ -88,10 +118,12 @@
                   background-image: url(./assets/imgs/pousada/bergolado/refugio-6.jpg);
                 "
                 class="slide-card"
+                card="wifi"
               >
                 <p>
-                  Desfrute de uma experiência única, onde a calma da natureza se
-                  entrelaça com o conforto e a hospitalidade.
+                  Fique sempre conectado! Nossos chalés oferecem Wi-Fi gratuito
+                  para que você possa compartilhar os melhores momentos da sua
+                  estadia, sem perder o contato com o mundo.
                 </p>
               </div>
             </div>
@@ -142,6 +174,49 @@
                 </p>
               </div>
             </div>
+            <div class="swiper-slide">
+              <div
+                style="
+                  background-image: url(./assets/imgs/pousada/geral/refugio-5.jpg);
+                "
+                class="slide-card"
+                card="date"
+              >
+                <p>
+                  O seu descanso começa às 14h, com o check-in, e se estende até
+                  o meio-dia do dia de saída, para aproveitar cada minuto da
+                  estadia.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                style="
+                  background-image: url(./assets/imgs/chales/esmeralda/refugio-16.jpg);
+                "
+                class="slide-card"
+                card="bed"
+              >
+                <p>
+                  Roupas de cama macias, toalhas de banho e rosto estão
+                  incluidas na reserva sempre prontas para o seu conforto.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                style="
+                  background-image: url(./assets/imgs/pousada/geral/refugio-1.jpg);
+                "
+                class="slide-card"
+                card="pedra"
+              >
+                <p>
+                  A apenas 1,5 km da Pedra do Baú, nossa pousada esta localizada
+                  no local perfeito para quem gosta de explorar a natureza.
+                </p>
+              </div>
+            </div>
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
@@ -170,157 +245,132 @@
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/geral/refugio-1.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/geral/refugio-2.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/geral/refugio-3.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/geral/refugio-4.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/geral/refugio-5.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/geral/refugio-6.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/geral/refugio-7.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/bergolado/refugio-1.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/bergolado/refugio-2.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/bergolado/refugio-4.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/bergolado/refugio-5.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/bergolado/refugio-6.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/bergolado/refugio-7.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/fogueira/refugio-1.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/fogueira/refugio-2.jpg"
-            alt="#"
+            data-celular="none"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/fogueira/refugio-3.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/fogueira/refugio-4.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/fogueira/refugio-5.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/fogueira/refugio-6.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/fogueira/refugio-7.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/fogueira/refugio-8.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/cafe/refugio-1.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/cafe/refugio-2.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/cafe/refugio-4.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/cafe/refugio-5.jpg"
-            alt="#"
           />
           <img
             class="aparesceAnimacaoFotos"
             loading="lazy"
             src="./assets/imgs/pousada/cafe/refugio-6.jpg"
-            alt="#"
           />
         </div>
       </section>
@@ -336,16 +386,18 @@
     </main>
     <footer>
       <div>
-        <a href="https://www.instagram.com/refugiodapedrasp/" target="_blank"
-          ><span>Instagram:</span> @refugiodapedrasp</a
-        >
-        <p><span>Contato:</span> (12) 99614-8154</p>
+        <div class="div-elementos">
+          <a href="https://www.instagram.com/refugiodapedrasp/" target="_blank"
+            ><span>Instagram:</span> @refugiodapedrasp</a
+          >
+          <p><span>Contato:</span> (12) 99614-8154</p>
+        </div>
+        <p>
+          <span>Endereço:</span> Refúgio da Pedra SP, Comunidade São Pedro, Rua
+          das Araucárias, Bairro Paiol Grande, São Bento do Sapucaí - SP
+        </p>
+        <p>© 2024 Refúgio da Pedra SP. Todos os direitos reservados.</p>
       </div>
-      <p>
-        <span>Endereço:</span> Refúgio da Pedra SP, Comunidade São Pedro, Rua
-        das Araucárias, Bairro Paiol Grande, São Bento do Sapucaí - SP
-      </p>
-      © 2024 Refúgio da Pedra SP. Todos os direitos reservados.
     </footer>
   </body>
 </html>
