@@ -1,7 +1,7 @@
 /* Celular */
 @media (max-width: 767px) {
   :root {
-    --altura-nav: 9vh;
+    --altura-nav: 8vh;
   }
 
   header {
