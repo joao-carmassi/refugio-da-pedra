@@ -154,6 +154,10 @@ nav {
   }
 }
 
+.mobile-bottom-navigation {
+  display: none;
+}
+
 main {
   margin-top: var(--altura-nav);
   width: 100%;
